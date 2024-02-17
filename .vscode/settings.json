@@ -1,7 +1,0 @@
-{
-    "sonarlint.connectedMode.project": {
-        "connectionId": "krigoxar",
-        "projectKey": "Krigoxar_JavaSpringBSUIRlabs"
-    },
-    "java.compile.nullAnalysis.mode": "automatic"
-}
