@@ -14,14 +14,7 @@ public class PingPresentor {
 
 	@GetMapping("/ping")
 	public ExtServerRespond ping(@RequestParam(value = "url") String url) throws IOException {
-		try
-		{
+		
 			return PingService.pingExternalServer(new UrlDTO(url));
-			
-		}
-		catch(IOException e)
-		{
-			return new ExtServerRespond(false);
-		}
 	}
 }

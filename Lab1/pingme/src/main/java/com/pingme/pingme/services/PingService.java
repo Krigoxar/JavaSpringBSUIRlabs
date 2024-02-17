@@ -9,8 +9,15 @@ import com.pingme.pingme.dtos.UrlDTO;
 public class PingService {
     private PingService() {}
 
-    public static ExtServerRespond pingExternalServer(UrlDTO url) throws IOException
+    public static ExtServerRespond pingExternalServer(UrlDTO url)
     {
-        return new ExtServerRespond(InetAddress.getByName(url.url()).isReachable(1000));
+        try
+		{
+            return new ExtServerRespond(InetAddress.getByName(url.url()).isReachable(1000));
+		}
+		catch(IOException e)
+		{
+			return new ExtServerRespond(false);
+		}
     }
 }
