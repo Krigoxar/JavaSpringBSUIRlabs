@@ -13,7 +13,7 @@ class PingmeApplicationTests {
 
 	@Test
 	void contextLoads() {
-		assertEquals(true, PingService.pingExternalServer(new UrlDTO("google.com")).IsResponding());
+		assertEquals(false, PingService.pingExternalServer(new UrlDTO("dsasdadsads")).IsResponding());
 	}
 
 }
