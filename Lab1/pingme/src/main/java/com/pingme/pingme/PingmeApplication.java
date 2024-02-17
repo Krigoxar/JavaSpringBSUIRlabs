@@ -1,13 +1,13 @@
-package com.lab_1.lab;
+package com.pingme.pingme;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LabApplication {
+public class PingmeApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LabApplication.class, args);
+		SpringApplication.run(PingmeApplication.class, args);
 	}
 
 }

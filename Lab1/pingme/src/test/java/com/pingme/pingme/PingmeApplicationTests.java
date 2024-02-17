@@ -1,10 +1,10 @@
-package com.lab_1.lab;
+package com.pingme.pingme;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LabApplicationTests {
+class PingmeApplicationTests {
 
 	@Test
 	void contextLoads() {
