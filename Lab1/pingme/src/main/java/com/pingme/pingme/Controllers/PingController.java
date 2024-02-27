@@ -1,4 +1,4 @@
-package com.pingme.pingme.presentors;
+package com.pingme.pingme.Controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -9,7 +9,7 @@ import com.pingme.pingme.dtos.UrlDTO;
 import com.pingme.pingme.services.PingService;
 
 @RestController
-public class PingPresentor {
+public class PingController {
 
 	@GetMapping("/ping")
 	public ExtServerRespond ping(@RequestParam(value = "url") String url) {
